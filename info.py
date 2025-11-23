@@ -42,9 +42,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '11615722'))
-API_HASH = environ.get('API_HASH', 'c992746520e8886d3330de2ec9a1a3a7')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5461187941:AAGd6E6BUHZYQPcliCmY5V9Pi_37_WSyeqo')
+API_ID = int(environ.get('API_ID', '21419016'))
+API_HASH = environ.get('API_HASH', '79198e1eb4cfd0f771a89d83b9144e7e')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8584023542:AAERJAAWB7KhuG-sbEzPQ_SzNZLUxtfg47s')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -63,8 +63,8 @@ MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/e54cae941b9b81f13
 MELCOW_VID = environ.get('MELCOW_VID',"")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5596825598').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1933114137').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002535364932').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -77,7 +77,7 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pp:pp@cluster0.j7z0jhc.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://combtmpxrcws_db_user:aSyDkcTBD6pNF6fT@cluster0.4kosmi0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
@@ -92,7 +92,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001863919592').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002535364932').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
@@ -106,7 +106,7 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 #No_result
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', True))
-NO_RESULTS_CHANNEL = int(environ.get("NO_RESULTS_CHANNEL", "-1001615904511"))
+NO_RESULTS_CHANNEL = int(environ.get("NO_RESULTS_CHANNEL", "-1002580746176"))
 
 # Others
 
@@ -115,13 +115,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/MLZ_BOTZ_SUPPORT")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MLZ_BOTZ")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/fileschannellls")
+S_GROUP = environ.get('S_GROUP',"https://t.me/mazhavil_bots")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/mazhavil_bots")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/mazhavil_db")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺...')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001854325233'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MLZ_BOTZ_SUPPORT')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003304589576'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Mazhavil_bots')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
